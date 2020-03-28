@@ -1,0 +1,32 @@
+
+# Generated on __DATE__
+# Do not edit manually
+
+class T3ll < Formula
+  desc "Simple tool for editing TYPO3 localization files"
+  homepage "https://github.com/garfieldius/t3ll/"
+  url " https://github.com/garfieldius/t3ll/archive/v__VERSION__.tar.gz"
+  sha256 "__SHASUM_SOURCE__"
+
+  depends_on "go" => :build
+  depends_on "node" => :build
+  depends_on "make" => :build
+  depends_on "yarn" => :build
+
+  bottle do
+    root_url "https://github.com/garfieldius/t3ll/releases/download/v__VERSION__/"
+    cellar :any_skip_relocation
+    sha256 "__SHASUM_LINUX__" => :x86_64_linux
+    sha256 "__SHASUM_MACOS__" => :sierra
+  end
+
+  def install
+    system "make", "VERSION=v#{version}"
+    system "mkdir", "-p", "#{bin}"
+    system "cp", "t3ll", "#{bin}/t3ll"
+  end
+
+  test do
+    system "#{bin}/t3ll", "version"
+  end
+end
