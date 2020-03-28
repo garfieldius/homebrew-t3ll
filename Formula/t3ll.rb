@@ -1,5 +1,5 @@
 
-# Generated on 2020.03.28 18:10:54
+# Generated on 2020.03.28 18:19:25
 # Do not edit manually
 
 class T3ll < Formula
@@ -16,8 +16,8 @@ class T3ll < Formula
   bottle do
     root_url "https://github.com/garfieldius/t3ll/releases/download/v0.5.1/"
     cellar :any_skip_relocation
-    sha256 "a23f77e168d5144b586661f8f72ab1da70e9c1a3e055d90159280025c4aa3615" => :x86_64_linux
-    sha256 "088357f25ad61c86f32d1b3f3a007c00cce9e4827c6635c7a9d6d160603eb6ba" => :sierra
+    sha256 "e096d8b410ae86a889c4fc5dc8806c864caed4d54a65ae2295d0cb3392942f98" => :x86_64_linux
+    sha256 "9de84384c8505f8f69f541552a36a891b70f5bbe9a3492e12f9083f7f203b02d" => :sierra
   end
 
   def install
