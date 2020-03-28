@@ -5,7 +5,7 @@
 class T3ll < Formula
   desc "Simple tool for editing TYPO3 localization files"
   homepage "https://github.com/garfieldius/t3ll/"
-  url " https://github.com/garfieldius/t3ll/archive/v0.5.0.tar.gz"
+  url "https://github.com/garfieldius/t3ll/archive/v0.5.0.tar.gz"
   sha256 "c9fb6369576706c7e889d9a6fe1c0cac1cf0a640a81876c9b7f6a41aaab849ca "
 
   depends_on "go" => :build
