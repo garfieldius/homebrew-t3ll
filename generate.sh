@@ -7,7 +7,7 @@ VERSION="$(git ls-remote --tags git@github.com:garfieldius/t3ll.git | awk '{prin
 if [[ "$(cat Formula/t3ll.rb | grep ${VERSION})" == "" ]]; then
   SHASUM_MACOS=$(curl -fsSL "https://github.com/garfieldius/t3ll/releases/download/v${VERSION}/t3ll-${VERSION}.sierra.bottle.tar.gz.sha256.txt")
   SHASUM_LINUX=$(curl -fsSL "https://github.com/garfieldius/t3ll/releases/download/v${VERSION}/t3ll-${VERSION}.x86_64_linux.bottle.tar.gz.sha256.txt")
-  SHASUM_SOURCE=$(curl -fsSL "https://github.com/garfieldius/t3ll/archive/v${VERSION}.tar.gz" | sha256sum | cut -b-65)
+  SHASUM_SOURCE=$(curl -fsSL "https://github.com/garfieldius/t3ll/archive/v${VERSION}.tar.gz" | sha256sum | cut -b-64)
   DATE=$(date +"%Y.%m.%d %H:%M:%S")
 
   cat t3ll.rb.tmpl \

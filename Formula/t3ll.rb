@@ -1,12 +1,12 @@
 
-# Generated on 2020.04.01 11:30:13
+# Generated on 2020.04.24 10:01:12
 # Do not edit manually
 
 class T3ll < Formula
   desc "Simple tool for editing TYPO3 localization files"
   homepage "https://github.com/garfieldius/t3ll/"
-  url "https://github.com/garfieldius/t3ll/archive/v0.5.2.tar.gz"
-  sha256 "8aa2ea0b56728b98933b7088133d97dcc58b7e7731666f2989d28f9300eb817d "
+  url "https://github.com/garfieldius/t3ll/archive/v0.5.3.tar.gz"
+  sha256 "47916559ec9f07794534384dbfa22db020f236fd41b9947251dac06504cd7da5"
 
   depends_on "go" => :build
   depends_on "node" => :build
@@ -14,10 +14,10 @@ class T3ll < Formula
   depends_on "yarn" => :build
 
   bottle do
-    root_url "https://github.com/garfieldius/t3ll/releases/download/v0.5.2/"
+    root_url "https://github.com/garfieldius/t3ll/releases/download/v0.5.3/"
     cellar :any_skip_relocation
-    sha256 "50cd5bd1705c1e6c157ff1f7b87502cd476ec306f2f1cfdd23c1c43c3f044b77" => :x86_64_linux
-    sha256 "f51fd446d6906ca1f05466c0a4fda34bebe54e6e8d0ed1551894fd33ea4db6f8" => :sierra
+    sha256 "e1db022d4cac04f91fb7a3c2dff63527de0a373b857169bb30b822a8880e6d17" => :x86_64_linux
+    sha256 "851de52b7822e33900d6035200ef47695ea1fbb35d2379a37706738b49cb5d57" => :sierra
   end
 
   def install
