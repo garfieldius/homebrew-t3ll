@@ -15,10 +15,9 @@ class T3ll < Formula
 
   bottle do
     root_url "https://github.com/garfieldius/t3ll/releases/download/v__VERSION__/"
-    cellar :any_skip_relocation
-    sha256 "__SHASUM_LINUX__" => :x86_64_linux
-    sha256 "__SHASUM_MACOS_X64__" => :sierra
-    sha256 "__SHASUM_MACOS_ARM__" => :arm64_big_sur
+    sha256 x86_64_linux:  "__SHASUM_LINUX__"
+    sha256 sierra:        "__SHASUM_MACOS_X64__"
+    sha256 arm64_big_sur: "__SHASUM_MACOS_ARM64__"
   end
 
   def install

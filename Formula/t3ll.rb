@@ -1,5 +1,5 @@
 
-# Generated on 2021.03.09 16:06:53
+# Generated on 2021.03.11 16:16:32
 # Do not edit manually
 
 class T3ll < Formula
@@ -15,10 +15,9 @@ class T3ll < Formula
 
   bottle do
     root_url "https://github.com/garfieldius/t3ll/releases/download/v0.6.2/"
-    cellar :any_skip_relocation
-    sha256 "704dbc3c178cae7599fb0f21c6a4c40374efe53e735157f60d29240d9fadeb95" => :x86_64_linux
-    sha256 "d24a0dc1295398e4bd8ff6144c21c2f01b8272e1774dff92c5f0dfb21d3c20cd" => :sierra
-    sha256 "__SHASUM_MACOS_ARM__" => :arm64_big_sur
+    sha256 x86_64_linux:  "704dbc3c178cae7599fb0f21c6a4c40374efe53e735157f60d29240d9fadeb95"
+    sha256 sierra:        "d24a0dc1295398e4bd8ff6144c21c2f01b8272e1774dff92c5f0dfb21d3c20cd"
+    sha256 arm64_big_sur: "40d556ea7b7ff95a424bf3c15e16d5bd6c12daf426781e7dffa8f17a9fe09202"
   end
 
   def install
