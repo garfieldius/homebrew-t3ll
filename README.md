@@ -1,3 +1,7 @@
+# DEPRECATED
+
+Please use `brew tap garfieldius/taps` instead
+
 # t3ll homebrew tap
 
 Homebrew tap for [t3ll](https://github.com/garfieldius/t3ll)
